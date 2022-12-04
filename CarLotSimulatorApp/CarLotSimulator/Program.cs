@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CarLotSimulator
 {
@@ -6,6 +7,11 @@ namespace CarLotSimulator
     {
         static void Main(string[] args)
         {
+
+
+
+
+
             //TODO
 
             //Create a seperate class file called Car
@@ -17,6 +23,42 @@ namespace CarLotSimulator
             //Now that the Car class is created we can instanciate 3 new cars
             //Set the properties for each of the cars
             //Call each of the methods for each car
+            var firstCar = new Car();
+            firstCar.Year = 2020;
+            firstCar.Make = "Chevrolet";
+            firstCar.Model = "Corvette";
+            firstCar.EngineNoise = "Vroom";
+            firstCar.HonkNoise = "beep";
+            firstCar.isDriveable= true;
+
+            var secondCar = new Car();
+            secondCar.Year = 2015;
+            secondCar.Make = "Ford";
+            secondCar.Model = "F-150";
+            secondCar.EngineNoise = "RumRum";
+            secondCar.HonkNoise = "BEEP";
+            secondCar.isDriveable= true;
+
+            var thirdCar = new Car();
+            thirdCar.Year = 2000;
+            thirdCar.Make = "Ford";
+            thirdCar.Model = "Ranger";
+            thirdCar.EngineNoise = "Scoobydoobop";
+            thirdCar.HonkNoise = "OongaBoonga";
+            thirdCar.isDriveable = false;
+
+            //Call Methods
+            Console.WriteLine("Engine Noises:");
+            firstCar.MakeEngineNoise(firstCar.EngineNoise);
+            secondCar.MakeEngineNoise(secondCar.EngineNoise);
+            thirdCar.MakeEngineNoise(thirdCar.EngineNoise);
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("Honk Noises:");
+            firstCar.MakeHonkNoise(firstCar.HonkNoise);
+            secondCar.MakeHonkNoise(secondCar.HonkNoise);
+            thirdCar.MakeHonkNoise(thirdCar.HonkNoise);
+
+
 
             //*************BONUS*************//
 
