@@ -8,7 +8,10 @@ namespace CarLotSimulator
 {
     public class Car
     {
-        public Car() { }
+        public Car() 
+        {
+            CarLot.numberOfCars++;
+        }
 
         public void MakeEngineNoise(string engineNoise)
         {
